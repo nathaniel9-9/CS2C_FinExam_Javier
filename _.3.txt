@@ -1,0 +1,13 @@
+const data = [
+  ["Genevieve", "Juan", "Luna", "Gabriel", "Elise"],
+  [24, 65, 21, 5, 9]
+];
+
+const restructuredData = [];
+for (let i = 0; i < data[0].length; i++) {
+  restructuredData.push([data[0][i], data[1][i]]);
+}
+
+for (const item of restructuredData) {
+  console.log(item);
+}

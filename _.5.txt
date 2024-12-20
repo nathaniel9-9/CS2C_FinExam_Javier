@@ -1,0 +1,40 @@
+function isStackEmpty() {
+  return groceryStack.length === 0;
+}
+
+function peek() {
+  if (isStackEmpty()) {
+    console.log("Stack is empty.");
+    return null;
+  }
+  return groceryStack[groceryStack.length - 1];
+}
+
+function push(item) {
+  groceryStack.push(item);
+  console.log(`Pushed: ${item}`);
+  console.log(`Current Stack: ${groceryStack}`);
+}
+
+function pop() {
+  if (isStackEmpty()) {
+    console.log("Stack is empty.");
+    return null;
+  }
+  const poppedItem = groceryStack.pop();
+  console.log(`Popped: ${poppedItem}`);
+  console.log(`Current Stack: ${groceryStack}`);
+  return poppedItem;
+}
+
+push("Milk");
+push("Eggs");
+push("Bread");
+push("Fruits");
+push("Vegetables");
+
+pop();
+pop();
+pop();
+pop();
+pop();
